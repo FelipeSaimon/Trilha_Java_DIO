@@ -1,21 +1,9 @@
 package Iphone;
 
-public class ReprodutorMusical {
+public interface ReprodutorMusical {
+    void tocar();
 
-    private int faixaAtual;
+    void pausar();
 
-    public ReprodutorMusical(int faixa){
-        this.faixaAtual = faixa;
-    }
-
-    private void tocar(){
-        System.out.println("Tocando musica");
-    }
-
-    private void pausar(){
-        System.out.println("Pausando musica");
-    }
-    private void trocarMusica(int faixa){
-        System.out.println("Trocando musica");
-    }
+    void trocarMusica(int faixa);
 }
